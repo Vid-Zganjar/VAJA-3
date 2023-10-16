@@ -1,12 +1,20 @@
 # Vaja 3 - Serializacija sporočil z JSON,XML in PB
 
-V vaji bomo z python serilizirali, deserializirali sporočila POPRAVI
+V vaji bomo z python serilizirali, deserializirali sporočila. Prav tako si bomo ogledali lastnosti sporočil ter si pogledali prevajanje med JSON, XML in PB.
 
 **Knjiznice:**
 
 - 'json': BUilt-in Python knjižnica za JSON 
 - 'xml.etree.ElementTree':  Built-in Python knjižnica za XML 
 - 'protobuf': Install via pip ('pip install protobuf')
+
+**Za PB je potrebno instalirati se PB compiler:**
+- windows(instaliraj verzijo *protoc-24.4-win64.zip* (https://github.com/protocolbuffers/protobuf/releases/tag/v24.4)
+- linux(sudo apt-get install protobuf-compiler)
+- mac (brew install protobuf)
+
+  
+
 
 
 ## Serializacija in deserializacija podatkovnih struktur JSON, XML in PB
