@@ -95,7 +95,7 @@ person.city = "Ljubljana"
 person.married = True
 
 # Serialize to file
-with open("/mnt/data/person.pb", "wb") as f:
+with open("./person.pb", "wb") as f:
     f.write(person.SerializeToString())
 ```
 
@@ -106,7 +106,7 @@ with open("/mnt/data/person.pb", "wb") as f:
 person = person_pb2.Person()
 
 # Deserialize from file
-with open("/mnt/data/person.pb", "rb") as f:
+with open("./person.pb", "rb") as f:
     person.ParseFromString(f.read())
 
 # Manipulate the data (e.g., change age and married status)
@@ -114,6 +114,6 @@ person.age = 31
 person.married = False
 
 # Serialize back to file
-with open("/mnt/data/person_updated.pb", "wb") as f:
+with open("./person_updated.pb", "wb") as f:
     f.write(person.SerializeToString())
 ```
