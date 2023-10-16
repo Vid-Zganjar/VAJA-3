@@ -73,14 +73,14 @@ married.text = "True"
 
 # Serialize to XML file
 tree = ET.ElementTree(root)
-tree.write("./person.xml")
+tree.write("./DATA/person.xml")
 ```
 
 ##### Deserializacija XML datoteke
 
 ```python
 # Parse the XML file
-tree = ET.parse('./person.xml')
+tree = ET.parse('./DATA/person.xml')
 root = tree.getroot()
 ```
 
@@ -93,7 +93,7 @@ root.find("age").text = "31"
 root.find("married").text = "False"
 
 # Write the manipulated data back to the same XML file
-tree.write("./person_updated.xml")
+tree.write("./DATA/person_updated.xml")
 ```
 ---
 ### Razlika med XML in JSON
@@ -138,7 +138,7 @@ for key, value in person.items():
 
 # Serialize to an XML string
 tree = ET.ElementTree(root)
-tree.write("./personNOVI.xml")
+tree.write("./DATA/personNOVI.xml")
 ```
 #### Funkcije serializacije po meri
 
