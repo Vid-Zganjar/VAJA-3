@@ -53,5 +53,7 @@ JSON (JavaScript Object Notation), XML (eXtensible Markup Language) in Protocol 
 ---
 ## Prevajanje med podatkovnimi strukturami
 
+[dostop do vaje](https://github.com/Jabobu/VAJE/tree/main/VAJE-3/Prevajanje)
+
 ---
 
