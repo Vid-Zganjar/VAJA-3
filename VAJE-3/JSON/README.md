@@ -93,7 +93,7 @@ person = {
   "married": True
 }
 
-with open('./person.json', 'w') as f:
+with open('./DATA/person.json', 'w') as f:
     json.dump(person, f, indent=4, sort_keys=True)
 ```
 
@@ -103,7 +103,7 @@ Output je JSON datoteka z imenom `person.json` kjer imamo serializiran pythonov 
 Zdaj pa preberimo JSON datoteko v Pythonov object.
 
 ```python
-with open('./person.json', 'r') as f:
+with open('./DATA/person.json', 'r') as f:
     deserialized_person = json.load(f)
 ```
 
@@ -119,7 +119,7 @@ deserialized_person['married'] = False
 
 
 ```python
-with open('./person.json', 'w') as f:
+with open('./DATA/person.json', 'w') as f:
     json.dump(deserialized_person, f, indent=4, sort_keys=True)
 ```
 
