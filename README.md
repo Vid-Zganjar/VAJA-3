@@ -1,1 +1,1 @@
-FOR testing purposes, Deluje kot opis za github
+# Repozitorij za lab vaje
