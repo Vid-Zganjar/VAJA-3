@@ -84,6 +84,11 @@ To bo ustvarilo datoteko `person_pb2.py`, ki vsebuje pythonove razrede (ang. cla
 
 
 ```python
+# ce ne dela import pazi kje imas trenutno skripto/jupyterNotebook in kje imas compilan person_pb2!
+# ce nista na enakem mesto lahko dodas path do datoteke tako :
+# import sys
+# sys.path.append('PATH DO person_pb2.py')                #spremeni za svoj PATH! naprimer'/Users/user/VAJE_3//PB'
+
 import person_pb2
 
 # Create a Person object and set fields
@@ -95,7 +100,7 @@ person.city = "Ljubljana"
 person.married = True
 
 # Serialize to file
-with open("./person.pb", "wb") as f:
+with open("./DATA/person.pb", "wb") as f:
     f.write(person.SerializeToString())
 ```
 
@@ -106,7 +111,7 @@ with open("./person.pb", "wb") as f:
 person = person_pb2.Person()
 
 # Deserialize from file
-with open("./person.pb", "rb") as f:
+with open("./DATA/person.pb", "rb") as f:
     person.ParseFromString(f.read())
 
 # Manipulate the data (e.g., change age and married status)
@@ -114,6 +119,6 @@ person.age = 31
 person.married = False
 
 # Serialize back to file
-with open("./person_updated.pb", "wb") as f:
+with open("./DATA/person_updated.pb", "wb") as f:
     f.write(person.SerializeToString())
 ```
