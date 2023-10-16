@@ -48,6 +48,8 @@ JSON (JavaScript Object Notation), XML (eXtensible Markup Language) in Protocol 
 
 ## Lastnosti sporočil
 
+[dostop do vaje](https://github.com/Jabobu/VAJE/tree/main/VAJE-3/Lastnosti)
+
 ---
 ## Prevajanje med podatkovnimi strukturami
 
