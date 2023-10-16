@@ -121,4 +121,23 @@ person.married = False
 # Serialize back to file
 with open("./DATA/person_updated.pb", "wb") as f:
     f.write(person.SerializeToString())
+
+# Print person object
+print(person)
+```
+
+##### Branje PB datoteke
+
+```python
+import person_pb2  # Assuming person_pb2.py is the generated Python binding
+
+# Create an empty Person object
+person_updated = person_pb2.Person()
+
+# Read the binary PB file and populate the Python object
+with open("./DATA/person_updated.pb", "rb") as f:
+    person_updated.ParseFromString(f.read())
+
+# print
+print(person_updated)
 ```
