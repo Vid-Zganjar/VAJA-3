@@ -1,5 +1,7 @@
 # Vaja 3 - Serializacija sporočil z JSON,XML in PB
 
+V vaji bomo z python serilizirali, deserializirali sporočila POPRAVI
+
 **Knjiznice:**
 
 - 'json': BUilt-in Python knjižnica za JSON 
