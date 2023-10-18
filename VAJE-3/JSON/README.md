@@ -62,11 +62,11 @@ Decodiranje/deseralizacija (Branje podatkov v pomnilnik) <-
 
 ### Operacije z JSON s pomočjo Pythonove knjižnice json
 
-1. **Seralizacija**: Pretvorba Pythonovih objektov v format JSON
+1. **Serializacija**: Pretvorba Pythonovih objektov v format JSON
     - `json.dump()`: Zapiše Pythonov objekt v datotečni objekt v formatu JSON.
     - `json.dumps()`: Vrne niz, ki predstavlja Pythonov objekt v formatu JSON.
   
-2. **Deseralizacija**: Pretvorba formata JSON v Pythonove objekte
+2. **Deserializacija**: Pretvorba formata JSON v Pythonove objekte
     - `json.load()`: Prebere datotečni objekt, ki vsebuje dokument JSON, in vrne Pythonov objekt.
     - `json.loads()`: Prebere niz v formatu JSON in vrne Pythonov objekt.
 
@@ -77,7 +77,7 @@ Decodiranje/deseralizacija (Branje podatkov v pomnilnik) <-
 ---
 #### Vaja: Seraliziraj, deseraliziraj in manipuliraj podatke JSON
 
-##### Seralizacija datoteke JSON
+##### Serializacija datoteke JSON
 Uporabili bomo dani Pythonov slovar, da ga seraliziramo v datoteko JSON.
 
 ```python
