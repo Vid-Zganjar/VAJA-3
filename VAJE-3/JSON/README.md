@@ -142,7 +142,7 @@ type(decoded_hand)
 blackjack_hand == tuple(decoded_hand)
 ```
 
-#### DODATNI PRIMER za custom python podatkovno strukturo Razred/Class  `Person`
+## DODATNI PRIMER (NI POTREBEN NA VAJO) za custom python podatkovno strukturo Razred/Class  `Person`
 
 Začeli bomo z razredom Python, imenovanim `Person`. Ta razred bo imel nekaj atributov, kot so `name`, `age`, `address` in `married`, skupaj z metodami za nastavitev in pridobivanje teh atributov.
 V podatkovnem tipu razred lahko definiramo več podstruktur. V spodnjem primeru imamo:
