@@ -119,7 +119,7 @@ person.age = 31
 person.married = False
 
 # Serialize back to file
-with open("./DATA/person_updated.pb", "wb") as f:
+with open("./DATA/p"erson_updated.pb", "wb") as f:
     f.write(person.SerializeToString())
 
 # Print person object
